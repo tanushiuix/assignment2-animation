@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400);
+
+:root {
+  --blue: #5F98CD;
+  --blue-dark: #264057;
+  --blue-light: #B2DAFF;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 430px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+  background: var(--blue-dark);
+  color: #666666;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.panel{
+    margin-top: 45px;
+    margin-left:auto;
+    margin-right: auto;
+    width:300px;
+    height: 330px;
+   
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 3px;
+}
+.header{
+    width: 100%;
+    padding-bottom: 19px;
+
+    background-color:  #5F98CD;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-icon .dash-top{
+    width: 20px;
+    height: 3px;    
+    border-radius: 3px;
+    background-color:  #B2DAFF;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.menu-icon .dash-bottom{
+    width: 29px;
+    height: 3px;
+    border-radius:3px;
+    background-color: #B2DAFF;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.menu-icon .circle{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #B2DAFF;
+    margin-top: 18px;
+    margin-left: 22px;
+}
+.title{
+    margin-top: 25px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+}
+ .search-icon{
+    z-index: 2;
+    font-size: 21px;
+    color: #B2DAFF;
+    margin-top: 24px;
+    margin-right: 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.search-icon:hover{
+    color: #fff;
+}
+
+.panel .header .menu-icon:hover .dash-top,
+.panel .header .menu-icon:hover .dash-bottom,
+.panel .header .menu-icon:hover .circle {
+  background: #fff;
+}
+
+.notifications{
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-around;
+    
+}
+.line{
+    width: 3px;
+    height: 99%;
+    background-color: #EBEBEB;
+    margin-left: 30px;
+}
+.notification-chamber{
+    width: 90%;
+   
+    display: flex;
+    flex-direction: column;
+}
+.notification{
+  margin-left: 1px;
+  
+  display: flex;
+  flex-direction: column;
+
+  
+  
+}
+.circle1{
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  border: 2px solid var(--blue);
+  box-shadow: 0 0 0 3px #fff;
+  border-radius: 6px;
+  top: 28px;
+  left: -10px;
+
+}
+.circle2{
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  border: 2px solid var(--blue);
+  box-shadow: 0 0 0 3px #fff;
+  border-radius: 6px;
+  top: 8px;
+  left: -10px;
+}
+.circle3{
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  border: 2px solid var(--blue);
+  box-shadow: 0 0 0 3px #fff;
+  border-radius: 6px;
+  top: 3px;
+  left: -10px;
+
+}
+.desc{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  height: 100%;
+  
+}
+
+
+.time1{
+  font-size: 11px;
+  margin-top: 25px;
+  margin-left: 12px;
+}
+.time2{
+  font-size: 11px;
+  margin-top: 6px;
+  margin-left: 12px;
+}
+.time3{
+  font-size: 11px;
+  
+  margin-left: 12px;
+}
+p{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 20px;
+}
+.panel .notifications .notification:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+@keyframes downtoup {
+    from {
+      transform: translate3d(0,50px,0);
+      opacity: 0;
+    }
+    to {
+      transform: translate3d(0,0,0);
+      opacity: 1;
+    }
+}
+.panel .notifications .notification-chamber .notification:nth-child(1) {
+    animation: downtoup .5s ease-out 0.4s;
+    animation-fill-mode: both;
+  }
+  
+  .panel .notifications .notification-chamber .notification:nth-child(2) {
+    animation: downtoup .5s ease-out 0.6s;
+    animation-fill-mode: both;
+  }
+  
+  .panel .notifications .notification-chamber .notification:nth-child(3) {
+    animation: downtoup .5s ease-out 0.8s;
+    animation-fill-mode: both;
+  }
+  
