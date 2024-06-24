@@ -6,51 +6,49 @@
     <title>Assignment 2 Panel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-
+    <script src="App.js"></script>
 </head>
 <body>
     <div class="frame">
         <div class="panel">
             <div class="header">
                 <div class="menu-icon">
-                    <div class="combine">
-                        <div class="dash-top">
-                            <span> <div class="circle"></div></span>
-                        </div>
-                        <div class="dash-bottom"></div>
-                    </div>
-                   
+                    <div class="dash-top"></div>
+                    <div class="dash-bottom"></div>
+                    <div class="circle"></div>
                 </div>
                 <span class="title">Notifications</span>
-               
+                <input type="text" class="search-input" placeholder="Search ...">
                 <div class="fa fa-search search-icon"></div>
             </div>
             <div class="notifications">
                 <div class="line"></div>
-                <div class="notification-chamber">
-                    <div class="notification">
-                        <div class="circle1"></div>
-                        <div class="desc">
-                            <span class="time time1">9:24 AM</span>
-                            <p><b>John Walker</b> posted a photo on your wall.</p>
-                        </div>
-                    </div>
-                    <div class="notification">
-                        <div class="circle2"></div>
-                        <div class="desc">
-                            <span class="time2">8:19 AM</span>
-                            <p><b>Alice Parker</b> commented your last post.</p>
-                        </div>
-                    </div>
-                    <div class="notification">
-                        <div class="circle3"></div>
-                        <span class="time3">Yesterday</span>
-                        <p><b>Luke Wayne</b> added you as friend.</p>
-                    </div>
+                <div class="notification">
+                    <div class="circle"></div>
+                    <span class="time">9:24 AM</span>
+                    <p><b>John Walker</b> posted a photo on your wall.</p>
+                </div>
+                <div class="notification">
+                    <div class="circle"></div>
+                    <span class="time">8:19 AM</span>
+                    <p><b>Alice Parker</b> commented your last post.</p>
+                </div>
+                <div class="notification">
+                    <div class="circle"></div>
+                    <span class="time">Yesterday</span>
+                    <p><b>Luke Wayne</b> added you as friend.</p>
                 </div>
             </div>
         </div>
-       
+        <div class="menu">
+            <ul>
+                <li><span class="fa fa-dashboard"></span>Dashboard</li>
+                <li><span class="fa fa-user"></span>Profile</li>
+                <li><span class="fa fa-bell"></span>Notifications</li>
+                <li><span class="fa fa-comments"></span>Messages</li>
+                <li><span class="fa fa-gear"></span>Settings</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
